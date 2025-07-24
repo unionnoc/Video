@@ -1,71 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Free Premium Tools & Giveaways</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-    body {
-      background: #111;
-      color: #fff;
-      font-family: 'Segoe UI', sans-serif;
-      text-align: center;
-      padding: 20px;
-    }
-
-    h1 {
-      font-size: 26px;
-      color: #ff4e00;
-    }
-
-    p {
-      color: #bbb;
-    }
-
-    .button {
-      display: block;
-      margin: 15px auto;
-      background: #ff4e00;
-      color: #fff;
-      text-decoration: none;
-      padding: 14px 25px;
-      border-radius: 10px;
-      width: 80%;
-      max-width: 400px;
-      font-size: 16px;
-      font-weight: bold;
-      transition: background 0.3s ease;
-    }
-
-    .button:hover {
-      background: #ff7900;
-    }
-
-    .note {
-      margin-top: 30px;
-      font-size: 12px;
-      color: #888;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Watch Exclusive Content</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #000;
+            color: #fff;
+            cursor: pointer;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        
+        .container {
+            max-width: 800px;
+            padding: 20px;
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+        
+        p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+        }
+        
+        .video-container {
+            position: relative;
+            width: 100%;
+            max-width: 800px;
+            margin-bottom: 30px;
+        }
+        
+        video {
+            width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+        }
+        
+        .watch-now-btn {
+            background-color: #e50914;
+            color: white;
+            border: none;
+            padding: 15px 40px;
+            font-size: 1.2rem;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            font-weight: bold;
+        }
+        
+        .watch-now-btn:hover {
+            background-color: #f40612;
+        }
+        
+        .logo {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+    </style>
 </head>
 <body>
+    <div class="logo">STREAMFLIX</div>
+    
+    <div class="container">
+        <h1>Video 2756</h1>
+        <p>Uploaded by sexbun56</p>
+        
+        <div class="video-container">
+            <video controls poster="https://via.placeholder.com/800x450?text=Preview+Image" autoplay muted loop>
+                <source src="https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_1mb.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        
+        <button class="watch-now-btn">WATCH NOW</button>
+    </div>
 
-  <h1>🎁 Free Premium Tools & Giveaways</h1>
-  <p>Tap any tool below to unlock your free access. No signup required!</p>
-
-  <a class="button" href="https://www.profitableratecpm.com/i1xpn7b1?key=861e4e1cb355596ca0a090e695287c1a" target="_blank">
-    🎬 Free Netflix Premium Trick – Working 2025
-  </a>
-
-  <a class="button" href="https://www.profitableratecpm.com/i1xpn7b1?key=861e4e1cb355596ca0a090e695287c1a" target="_blank">
-    🎧 Spotify Premium Free Access (Limited Time)
-  </a>
-
-  <a class="button" href="https://www.profitableratecpm.com/i1xpn7b1?key=861e4e1cb355596ca0a090e695287c1a" target="_blank">
-    📚 Download Secret PDF Books – Top 10 Picks
-  </a>
-
-  <p class="note">🔒 Secure & safe tricks. We update this page daily.</p>
-
+    <script>
+        // Redirect when clicking anywhere on the page
+        document.addEventListener('DOMContentLoaded', function() {
+            document.body.addEventListener('click', function() {
+                window.location.href = "https://www.profitableratecpm.com/i1xpn7b1?key=861e4e1cb355596ca0a090e695287c1a";
+            });
+            
+            // Also make the button clickable (though whole page redirects anyway)
+            document.querySelector('.watch-now-btn').addEventListener('click', function(e) {
+                e.stopPropagation(); // Prevent the body click from triggering first
+                window.location.href = "https://www.profitableratecpm.com/i1xpn7b1?key=861e4e1cb355596ca0a090e695287c1a";
+            });
+        });
+    </script>
 </body>
 </html>
